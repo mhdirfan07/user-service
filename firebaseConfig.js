@@ -2,7 +2,7 @@ const admin = require('firebase-admin');
 
 const PROD = process.env.NODE_ENV === 'PRODUCTION';
 
-if (PROD) {
+if (true) {
   admin.initializeApp();
 } else {
   const serviceAccount = require('./serviceAccount.json');
