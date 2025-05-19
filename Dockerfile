@@ -13,9 +13,6 @@ RUN npm install
 # Menyalin seluruh file aplikasi ke dalam container
 COPY . .
 
-# Membangun aplikasi dengan Vite
-RUN npm run start
-
 # Menginstall serve untuk menyajikan aplikasi di production
 # RUN npm install -g serve
 
@@ -23,4 +20,4 @@ RUN npm run start
 EXPOSE 3000
 
 # Menjalankan aplikasi menggunakan serve
-# CMD ["serve", "-s", "dist", "-l", "8080"]
+CMD ["npm", "run", "start"]
