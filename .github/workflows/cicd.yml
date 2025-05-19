@@ -28,8 +28,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start project
-        run: npm run start
+      # - name: Build project
+      #   run: npm run build
 
       - name: Log in to Google Cloud
         uses: google-github-actions/auth@v1
