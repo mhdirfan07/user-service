@@ -9,6 +9,7 @@ env:
   GAR_LOCATION: asia-southeast2
   SERVICE: user-service
   REGION: asia-southeast2
+  NODE_ENV: PRODUCTION
 
 jobs:
   build:
